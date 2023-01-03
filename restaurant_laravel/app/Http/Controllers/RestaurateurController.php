@@ -100,9 +100,9 @@ class RestaurateurController extends Controller
     }
 
     // Affiche un restaurant
-    public function profile($id)
+    public function profil($id)
     {
-        $restauranteur = Restauranteur::find($id);
-        return response()->json(['restauranteur' => $restauranteur]);
+        $restaurateur = Restaurateur::find($id);
+        return response()->json(['restaurateur' => $restaurateur]);
     }
 }
